@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Naquify - AI Photo Enhancer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background: linear-gradient(135deg, #1e0c42, #582f63, #c97f8b, #f0bda6);
+        background-attachment: fixed;
+      }
+      /* For hiding scrollbar */
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+      }
+      :root {
+        --grad-start: #8b5cf6; /* purple-500 */
+        --grad-end: #3b82f6;   /* blue-500 */
+      }
+      .btn-gradient {
+        background-image: linear-gradient(to right, var(--grad-start) 0%, var(--grad-end) 100%);
+        transition: all 0.3s ease;
+        background-size: 200% auto;
+      }
+      .btn-gradient:hover {
+        background-position: right center; /* change the direction of the change here */
+      }
+       .btn-animated {
+        transition: transform 0.1s ease-out;
+      }
+      .btn-animated:active {
+        transform: scale(0.95);
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.26.0"
+  }
+}
+</script>
+</head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
