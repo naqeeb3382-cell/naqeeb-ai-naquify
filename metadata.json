@@ -1,5 +1,6 @@
 {
-  "name": "Copy of Naquify - AI Photo & Vedio Enhancer",
+  "name": "Copy of AI Photo & Video Enhancer",
   "description": "An AI-powered photo editor that allows users to upload a picture and apply various beautification effects, age adjustments, and creative filters using the power of Gemini.",
-  "requestFramePermissions": []
+  "requestFramePermissions": [],
+  "majorCapabilities": []
 }

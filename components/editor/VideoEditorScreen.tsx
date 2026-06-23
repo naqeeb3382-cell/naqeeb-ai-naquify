@@ -104,7 +104,7 @@ export const VideoEditorScreen: React.FC<VideoEditorScreenProps> = ({ initialVid
     const link = document.createElement('a');
     link.href = generatedVideoUrl;
     const promptForFilename = prompt ? prompt.toLowerCase().replace(/\s+/g, '-').substring(0, 20) : 'generated';
-    link.download = `naquify-video-${promptForFilename}.mp4`;
+    link.download = `video-${promptForFilename}.mp4`;
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);

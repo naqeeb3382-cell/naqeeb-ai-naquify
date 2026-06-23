@@ -49,7 +49,7 @@ export const Feedback: React.FC<FeedbackProps> = ({ onClose }) => {
         {submitted ? (
             <div className="p-8 text-center">
                 <h2 className="text-2xl font-bold text-white mb-2">Thank you! ❤️</h2>
-                <p className="text-gray-300">Your feedback has been received. We appreciate you helping us make Naquify better!</p>
+                <p className="text-gray-300">Your feedback has been received. We appreciate you helping us make this app better!</p>
                 <button
                     onClick={onClose}
                     className="mt-6 bg-cyan-600 text-white font-semibold py-2 px-6 rounded-lg hover:bg-cyan-700 transition-colors"
@@ -61,7 +61,7 @@ export const Feedback: React.FC<FeedbackProps> = ({ onClose }) => {
             <form onSubmit={handleSubmit} className="p-8 space-y-6">
                 <div>
                     <h2 className="text-2xl font-bold text-white">Share your thoughts with us! ❤️</h2>
-                    <p className="text-gray-400 mt-1">Your feedback helps us make Naquify better for everyone!</p>
+                    <p className="text-gray-400 mt-1">Your feedback helps us make this app better for everyone!</p>
                 </div>
             
                 <div>

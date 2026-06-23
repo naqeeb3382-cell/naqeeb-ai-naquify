@@ -88,7 +88,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({ onImageUpload, onVideoUp
       
       <div className="mb-12">
         <CameraIcon className="w-16 h-16 text-cyan-400 mx-auto mb-4" />
-        <h1 className="text-4xl md:text-5xl font-extrabold text-white">Welcome to Naquify</h1>
+        <h1 className="text-4xl md:text-5xl font-extrabold text-white">Welcome to AI Photo & Video Enhancer</h1>
         <p className="text-lg md:text-xl text-gray-300 mt-2 max-w-2xl mx-auto">
           Your AI-powered creative suite. Select a tool to begin.
         </p>

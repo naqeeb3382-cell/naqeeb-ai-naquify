@@ -1,5 +1,5 @@
 import React from 'react';
-import { CameraIcon, HomeIcon } from './icons';
+import { HomeIcon } from './icons';
 
 interface HeaderProps {
   onGoHome?: () => void;
@@ -21,9 +21,8 @@ export const Header: React.FC<HeaderProps> = ({ onGoHome }) => {
           )}
         </div>
         <div className="flex items-center gap-3 text-white">
-          <CameraIcon className="w-8 h-8 text-cyan-400" />
           <h1 className="text-2xl md:text-3xl font-bold tracking-wider bg-gradient-to-r from-cyan-400 to-purple-500 text-transparent bg-clip-text">
-            Naquify
+            AI Photo & Video Enhancer
           </h1>
         </div>
         <div className="flex-1"></div>

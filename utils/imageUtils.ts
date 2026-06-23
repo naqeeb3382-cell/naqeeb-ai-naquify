@@ -135,19 +135,10 @@ export const downloadEditedImage = (
         ctx.rotate(-rads);
         ctx.translate(-rotatedWidth / 2, -rotatedHeight / 2);
 
-        // Add watermark
-        const watermarkText = 'Naquify';
-        const padding = Math.max(20, rotatedWidth * 0.02);
-        ctx.font = `bold ${Math.max(24, rotatedWidth / 35)}px 'Helvetica', sans-serif`;
-        ctx.fillStyle = 'rgba(255, 255, 255, 0.6)';
-        ctx.textAlign = 'right';
-        ctx.textBaseline = 'bottom';
-        ctx.fillText(watermarkText, canvas.width - padding, canvas.height - padding);
-
         const link = document.createElement('a');
         link.href = canvas.toDataURL('image/png');
         const promptForFilename = lastPrompt ? lastPrompt.toLowerCase().replace(/\s+/g, '-').substring(0, 20) : 'edited';
-        link.download = `naquify-${promptForFilename}-${resolution.label.toLowerCase()}.png`;
+        link.download = `image-${promptForFilename}-${resolution.label.toLowerCase()}.png`;
         link.click();
     };
     img.src = imageSrc;
